@@ -102,6 +102,7 @@ ul.tabs span {
     bottom: 0;
   }
   #barraMenu ul.tabs {
+    background: #000;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
