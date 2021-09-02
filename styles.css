@@ -163,9 +163,17 @@ ul.tabs span {
 }
 
 @media screen and (max-width: 530px) {
+  header {
+    background-image: url(Tapiz/blue.gif);
+    background-size: 75px;
+    background-repeat: repeat;
+  }
   #titulo {
     width: 100%;
     min-width: 350px;
+  }
+  #titulo h1 {
+    background-image: url(Tapiz/back.gif);
   }
   #barraMenu {
     width: 100%;
@@ -203,7 +211,7 @@ ul.tabs span {
     font-size: 10px;
   }
   #barraMenu ul.tabs a:hover {
-    background: #037E8C;
+    background: #0984CC;
     -webkit-transform: none;
             transform: none;
   }
