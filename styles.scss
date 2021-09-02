@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica,Arial, sans-serif;
+}
+
+.container{
+    margin: 0px auto;
+    max-width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#titulo{
+    width: 35%;
+    padding: 0px 20px;
+    
+}
+#barraMenu{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ul.tabs {
+	width:100%;
+	background:#024959;
+    overflow:hidden;
+	list-style:none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    a {
+        color:#fff;
+        padding:18px;
+        display:block;
+        text-decoration:none;
+    }
+    a:hover {
+        background:#037E8C;
+    }
+    span {
+        margin-right:10px;
+    }
+}
+
+@media screen and (max-width:960px ) {
+    .container{
+        flex-direction: column;
+    }
+    
+    #titulo{
+        width: 100%;
+        text-align: center;
+        
+    }
+    #barraMenu{
+        width: 100%;
+        ul.tabs {
+            
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width:630px ) {
+    #barraMenu{
+        width: 100%;
+        min-width: 350px;
+        position: absolute;
+        bottom: 0;
+        
+        ul.tabs {
+            
+            justify-content:center;
+           
+            li{
+                width: 20%;
+            }
+            a {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding:10px 0px;
+                font-size: 15px;
+               
+            }
+            a:hover {
+                background:#037E8C;
+            }
+            span {
+                margin-right:0;
+                
+                font-size: 24px;
+            }
+        }
+    }
+
+}
+
+
+
+
+/*
+ul.tabs{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px auto;
+    width: 100%;
+   
+    li{
+        list-style: none;
+        width: auto;
+        display: flex;
+
+        span{
+            text-align: center;
+            padding: 10px;
+        }
+        a{
+            text-decoration: none;
+            color:#fff;
+            padding: 10px;
+            display:block;
+            background-color: aqua;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: black;
+        }
+    }
+    
+}*/
