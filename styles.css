@@ -197,7 +197,7 @@ ul.tabs span {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 10px 0px;
-    font-size: 12px;
+    font-size: 10px;
   }
   #barraMenu ul.tabs a:hover {
     background: #037E8C;
