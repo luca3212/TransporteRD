@@ -28,14 +28,13 @@ body{
     padding: 0px 10px;
     h1{
         font-size: 2.5rem;
-        background-image: url(Tapiz/blue.gif);
 
+        background-image: url(Tapiz/blue.gif);
         background-size: 75px;
         background-repeat: repeat;
-    
-           //background: linear-gradient(179deg, #ee7b5a,#ed5152);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        
     }
     
 }
@@ -141,13 +140,17 @@ ul.tabs {
         bottom: 0;
         
         ul.tabs {
-            background: #000;
+            //background: #000;
+            background-image: url(Tapiz/blue.gif);
+            background-size: 75px;
+            background-repeat: repeat;
             justify-content:center;
            
             li{
                 width: 20%;
             }
             a {
+                color:#fff;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

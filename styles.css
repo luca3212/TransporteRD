@@ -174,7 +174,9 @@ ul.tabs span {
     bottom: 0;
   }
   #barraMenu ul.tabs {
-    background: #000;
+    background-image: url(Tapiz/blue.gif);
+    background-size: 75px;
+    background-repeat: repeat;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -183,6 +185,7 @@ ul.tabs span {
     width: 20%;
   }
   #barraMenu ul.tabs a {
+    color: #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
