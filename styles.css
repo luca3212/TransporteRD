@@ -201,6 +201,8 @@ ul.tabs span {
   }
   #barraMenu ul.tabs a:hover {
     background: #037E8C;
+    -webkit-transform: none;
+            transform: none;
   }
   #barraMenu ul.tabs span {
     margin-right: 0;
