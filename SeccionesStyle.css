@@ -1,6 +1,7 @@
 .secciones {
   width: 100%;
   height: 600px;
+  margin-bottom: 80px;
 }
 
 .secciones article {

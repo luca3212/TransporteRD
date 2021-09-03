@@ -13,7 +13,7 @@ body{
 header{
     margin-bottom: 30px;
     
-    background: linear-gradient(to right, #642b73, #c6426e); 
+    //background: linear-gradient(to right, #642b73, #c6426e); 
 }
 .container{
     margin: 0px auto;
@@ -23,6 +23,9 @@ header{
     justify-content: space-between;
     align-items: stretch;
     padding: 10px 0px;
+    border-bottom: 1px solid #642b73;
+
+
 
 }
 
@@ -35,13 +38,14 @@ header{
 
         /*background-image: url(Tapiz/blue.gif);
         background-size: 75px;
-        background-repeat: repeat;
+        background-repeat: repeat;*/
+        background: linear-gradient(to right, #c6426e , #642b73 ); 
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
 
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;*/
-    color:#fff;
-        
-        
+       
+    //color:#c6426e;
+       
     }
     
 }
@@ -63,8 +67,7 @@ ul.tabs {
     justify-content: flex-end;
     
     a {
-        
-        color:#fff;
+        color:#642b73;
         padding:10px;
         display:block;
         text-decoration:none;
@@ -86,7 +89,7 @@ ul.tabs {
     transform: scale(1.1);
 }
 
-@media screen and (max-width:960px ) {
+/*@media screen and (max-width:960px ) {
     .container{
         flex-direction: column;
     }
@@ -105,9 +108,9 @@ ul.tabs {
             }
         }
     }
-}
-
-@media screen and (max-width:815px ) {
+}*/
+//815px
+@media screen and (max-width:960px ) {
     .container{
         flex-direction: column;
     }
@@ -115,7 +118,6 @@ ul.tabs {
     #titulo{
         width: 100%;
         text-align: center;
-        
     }
     #barraMenu{
         width: 100%;
@@ -141,16 +143,23 @@ ul.tabs {
 }
 
 @media screen and (max-width:530px ) {
+    .container{
+        border-bottom: none;
+    }
     header{
-        background: linear-gradient(to right, #642b73, #c6426e);
+        
         margin-bottom: 15px;
     }
     #titulo{
         width: 100%;
         min-width: 350px;
+        padding: 0px 30px;
         h1{
+            font-size: 1.5rem;
             color:#fff;
+            text-align: left;
         }
+        
     }
     #barraMenu{
         width: 100%;
@@ -158,15 +167,20 @@ ul.tabs {
         position: fixed;
         bottom: 0;
         z-index: 2000;
+        border-top: 1px solid #c7c7c7;
         ul.tabs {
-            background: linear-gradient(to right, #642b73, #c6426e);
+            background-image: url(Tapiz/back.gif);
+            background-size: 75px;
+            background-repeat: repeat;
+
             justify-content:center;
            
             li{
                 width: 20%;
             }
             a {
-                color:#fff;
+                //color:#000;
+                color:#642b73;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -174,12 +188,8 @@ ul.tabs {
                 padding:10px 0px;
                 font-size: 10px;
             }
-            a:hover {
-                //background:#037E8C;
-                //background: #0984CC;
-                background: rgba(0, 0, 0, 0.3);
-                transform: none;
-            }
+            
+            
             span {
                 margin-right:0;
                 font-size: 24px;
@@ -187,7 +197,7 @@ ul.tabs {
         }
     }
     .active{
-        background: rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
     }
 
 }

@@ -14,8 +14,6 @@ body {
 
 header {
   margin-bottom: 30px;
-  background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
-  background: linear-gradient(to right, #642b73, #c6426e);
 }
 
 .container {
@@ -35,6 +33,7 @@ header {
       -ms-flex-align: stretch;
           align-items: stretch;
   padding: 10px 0px;
+  border-bottom: 1px solid #642b73;
 }
 
 #titulo {
@@ -46,11 +45,11 @@ header {
   font-size: 2.5rem;
   /*background-image: url(Tapiz/blue.gif);
         background-size: 75px;
-        background-repeat: repeat;
-
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;*/
-  color: #fff;
+        background-repeat: repeat;*/
+  background: -webkit-gradient(linear, left top, right top, from(#c6426e), to(#642b73));
+  background: linear-gradient(to right, #c6426e, #642b73);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 #barraMenu {
@@ -82,7 +81,7 @@ ul.tabs {
 }
 
 ul.tabs a {
-  color: #fff;
+  color: #642b73;
   padding: 10px;
   display: block;
   text-decoration: none;
@@ -105,31 +104,27 @@ ul.tabs span {
           transform: scale(1.1);
 }
 
-@media screen and (max-width: 960px) {
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  #titulo {
-    width: 100%;
-    text-align: center;
-  }
-  #barraMenu {
-    width: 100%;
-  }
-  #barraMenu ul.tabs {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
+/*@media screen and (max-width:960px ) {
+    .container{
+        flex-direction: column;
+    }
+    
+    #titulo{
+        width: 100%;
+        text-align: center;
+        
+    }
+    #barraMenu{
+        width: 100%;
+        ul.tabs {
             justify-content: center;
-  }
-  #barraMenu ul.tabs li {
-    width: 20%;
-  }
-}
-
-@media screen and (max-width: 815px) {
+            li{
+                width: 20%;
+            }
+        }
+    }
+}*/
+@media screen and (max-width: 960px) {
   .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -175,17 +170,21 @@ ul.tabs span {
 }
 
 @media screen and (max-width: 530px) {
+  .container {
+    border-bottom: none;
+  }
   header {
-    background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
-    background: linear-gradient(to right, #642b73, #c6426e);
     margin-bottom: 15px;
   }
   #titulo {
     width: 100%;
     min-width: 350px;
+    padding: 0px 30px;
   }
   #titulo h1 {
+    font-size: 1.5rem;
     color: #fff;
+    text-align: left;
   }
   #barraMenu {
     width: 100%;
@@ -193,10 +192,12 @@ ul.tabs span {
     position: fixed;
     bottom: 0;
     z-index: 2000;
+    border-top: 1px solid #c7c7c7;
   }
   #barraMenu ul.tabs {
-    background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
-    background: linear-gradient(to right, #642b73, #c6426e);
+    background-image: url(Tapiz/back.gif);
+    background-size: 75px;
+    background-repeat: repeat;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -205,7 +206,7 @@ ul.tabs span {
     width: 20%;
   }
   #barraMenu ul.tabs a {
-    color: #fff;
+    color: #642b73;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -222,17 +223,13 @@ ul.tabs span {
     padding: 10px 0px;
     font-size: 10px;
   }
-  #barraMenu ul.tabs a:hover {
-    background: rgba(0, 0, 0, 0.3);
-    -webkit-transform: none;
-            transform: none;
-  }
   #barraMenu ul.tabs span {
     margin-right: 0;
     font-size: 24px;
   }
   .active {
-    background: rgba(0, 0, 0, 0.3);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 }
 /*# sourceMappingURL=styles.css.map */
