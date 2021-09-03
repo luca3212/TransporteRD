@@ -146,14 +146,15 @@ ul.tabs {
     #barraMenu{
         width: 100%;
         min-width: 350px;
-        position: absolute;
+        position: fixed;
         bottom: 0;
-        
+        z-index: 2000;
         ul.tabs {
             //background: #000;
             background-image: url(Tapiz/blue.gif);
             background-size: 75px;
             background-repeat: repeat;
+            
             justify-content:center;
            
             li{
