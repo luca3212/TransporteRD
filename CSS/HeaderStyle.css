@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(/Tapiz/back.gif);
+  background-image: url(Tapiz/back.gif);
   background-size: 75px;
   background-repeat: repeat;
 }
@@ -195,7 +195,7 @@ ul.tabs span {
     border-top: 1px solid #c7c7c7;
   }
   #barraMenu ul.tabs {
-    background-image: url(/Tapiz/back.gif);
+    background-image: url(Tapiz/back.gif);
     background-size: 75px;
     background-repeat: repeat;
     -webkit-box-pack: center;
