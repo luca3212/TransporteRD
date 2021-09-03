@@ -14,6 +14,8 @@ body {
 
 header {
   margin-bottom: 30px;
+  background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
+  background: linear-gradient(to right, #642b73, #c6426e);
 }
 
 .container {
@@ -33,7 +35,6 @@ header {
       -ms-flex-align: stretch;
           align-items: stretch;
   padding: 10px 0px;
-  border-bottom: 2px solid #61bae3;
 }
 
 #titulo {
@@ -43,11 +44,13 @@ header {
 
 #titulo h1 {
   font-size: 2.5rem;
-  background-image: url(Tapiz/blue.gif);
-  background-size: 75px;
-  background-repeat: repeat;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  /*background-image: url(Tapiz/blue.gif);
+        background-size: 75px;
+        background-repeat: repeat;
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;*/
+  color: #fff;
 }
 
 #barraMenu {
@@ -79,7 +82,7 @@ ul.tabs {
 }
 
 ul.tabs a {
-  color: #61bae3;
+  color: #fff;
   padding: 10px;
   display: block;
   text-decoration: none;
@@ -95,6 +98,11 @@ ul.tabs a:hover {
 ul.tabs span {
   margin-right: 10px;
   font-size: 24px;
+}
+
+.active {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @media screen and (max-width: 960px) {
@@ -168,16 +176,16 @@ ul.tabs span {
 
 @media screen and (max-width: 530px) {
   header {
-    background-image: url(Tapiz/blue.gif);
-    background-size: 75px;
-    background-repeat: repeat;
+    background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
+    background: linear-gradient(to right, #642b73, #c6426e);
+    margin-bottom: 15px;
   }
   #titulo {
     width: 100%;
     min-width: 350px;
   }
   #titulo h1 {
-    background-image: url(Tapiz/back.gif);
+    color: #fff;
   }
   #barraMenu {
     width: 100%;
@@ -187,9 +195,8 @@ ul.tabs span {
     z-index: 2000;
   }
   #barraMenu ul.tabs {
-    background-image: url(Tapiz/blue.gif);
-    background-size: 75px;
-    background-repeat: repeat;
+    background: -webkit-gradient(linear, left top, right top, from(#642b73), to(#c6426e));
+    background: linear-gradient(to right, #642b73, #c6426e);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -216,13 +223,16 @@ ul.tabs span {
     font-size: 10px;
   }
   #barraMenu ul.tabs a:hover {
-    background: #0984CC;
+    background: rgba(0, 0, 0, 0.3);
     -webkit-transform: none;
             transform: none;
   }
   #barraMenu ul.tabs span {
     margin-right: 0;
     font-size: 24px;
+  }
+  .active {
+    background: rgba(0, 0, 0, 0.3);
   }
 }
 /*# sourceMappingURL=styles.css.map */
