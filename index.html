@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="CSS/HeaderStyle.css">
     <!--Estilo secciones completo-->
     <link rel="stylesheet" href="CSS/SeccionesStyle.css">
+    <!--Estilo PopUp de Mapa-->
+    <link rel="stylesheet" href="CSS/PopUpStyle.css">
 
-     <!--MenuAction-->
+    <!--MenuAction-->
      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+     <script type="text/javascript" src="JAVASCRIPT/ajax.js"></script>
+     <script type="text/javascript" src="JAVASCRIPT/jquery-3.1.1.js"></script>   
 
     <!--Mapa-->
     <script src="https://d19vzq90twjlae.cloudfront.net/leaflet/v0.7.7/leaflet-src.js"></script>
@@ -50,7 +54,7 @@
                         <div>
                             <h3>LUNES A SABADOS<br><br>
                             SELECCIONE UNA LINEA:</h3><br>
-                            <select id="estilo" class="cssSelect" onchange="estiloSelect()">
+                            <select id="selectR" class="cssSelect" onchange="recorridoSelect()">
                                 <option value="Todas">Todas</option>
                                 <option value="LineaA" >Linea A</option>
                                 <option value="LineaE">Linea E</option>
@@ -117,19 +121,21 @@
                 </div>
              </article>
         </div>
-    
-    
-   
         
-   
+        <!--border-top: 1px solid #D7DDE5; color border gris-->
+       
+            
+        
+    <script src="JAVASCRIPT/cargaMap.js"></script>  
+    
+    <script type="text/javascript" src="JAVASCRIPT/puntos_recarga.js"></script>    
+    <script type="text/javascript" src="JAVASCRIPT/recorrido_lineas.js"></script>
 
-            
-            
-        
-        
     <script src="JAVASCRIPT/main.js"></script>
-    <script src="JAVASCRIPT/cargaMap.js"></script>
-
-
+    
+    <!--configuracion div "info" y control "select" -->
+    <script src="JAVASCRIPT/config.js"></script>
+    
+    
 </body>
 </html>

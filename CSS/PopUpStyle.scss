@@ -1,0 +1,152 @@
+
+/* popup */
+.li-TituloPri{
+    //min-width: 150px;
+    width: max-content;
+
+    text-align: center;
+    padding: 8px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+.li-Titulo{
+    text-align: left;
+    padding: 2px;
+    list-style-type: none;
+    font-weight: bold;
+    padding: 4px 2px 2px 8px;
+}
+.li-Dato{
+    text-align: center;
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    list-style-type: none;
+}
+
+
+/* controles de leytenda topright*/
+.info {
+    width: 250px;
+    height: 160px;
+    font: 14px Helvetica,arial, sans-serif;
+    background: linear-gradient(to right, #642b73, #c6426e);
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    border-radius: 5px;
+
+    .bloque1{
+        width: 100%;
+        height: 45%;
+        display: flex;
+        flex-direction: row;
+        background: #fff;
+        border-radius: 5px 5px 0px 0px;
+        .SupLeft{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 15px;
+            .txt{
+                text-align: left;
+                opacity: 0.65;
+            }
+            .number{
+                text-align: left;
+            }
+            .EO{
+                font-size: 10px;
+            }
+        }
+        .SupRight{
+            width: 50%;
+            height: 100%;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            hr{
+                margin: 3px 0px 6px 0px;
+                width: 80%;
+            }
+
+        }
+    }
+    .bloque2{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        background: #fff;
+        
+        #medio{
+            border-left: 1px solid #D7DDE5;
+            border-right: 1px solid #D7DDE5;
+        }
+        .filaInferior{
+            width: 100%;
+            height: 100%;
+            border-top: 1px solid #D7DDE5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            .txt{
+                width: 100%;
+                height: 40%;
+                display: flex;
+                align-items: center;
+                
+                h3{
+                    margin-left: 5px;
+                    font-size: 12px;
+                    opacity: .65;
+                    
+                }
+            }
+            .number{
+                width: 100%;
+                height: 60%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                h2{
+                    color: black;
+                    padding-right: 5px;
+                }
+            }
+            
+            
+            
+        }
+        
+    }
+}
+
+
+
+
+.info h4 {
+    margin: 0 0 5px;
+    color: #777;
+}
+
+.dat_cole{
+    
+}
+
+                        /*<div class="bloque1">
+                            <div class="SupLeft"></div>
+                            <div class="SupRight"></div>
+                        </div>
+                        <div class="bloque2">
+                            <div class="filaInferior"></div>
+                            <div class="filaInferior"></div>
+                            <div class="filaInferior"></div>
+                        </div>*/
+

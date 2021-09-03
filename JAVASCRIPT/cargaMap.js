@@ -28,3 +28,6 @@ L.control.layers(baseMaps,null,{
         position: 'bottomleft', // 'topleft', 'bottomleft', 'bottomright'
         collapsed: false // true
 }).addTo(map);
+
+//capa principal
+var capaPrincipal = L.layerGroup().addTo(map);
