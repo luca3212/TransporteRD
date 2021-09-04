@@ -126,15 +126,95 @@
         }
         
     }
+
+    #bloqueInicio{
+        width: 100%;
+        height: 95%;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px 5px 0px 0px;
+        .fila1,.fila2{
+            width: 100%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #D7DDE5;
+            .Cuadro1{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 3px;
+                border-right: 1px solid #D7DDE5;
+                .txt{
+                    opacity: 0.65;
+                    font-size: 10px;
+                }
+                .number{
+                    font-size: 10px;
+                }
+                .EO{
+                    h2{
+                        font-size: 1.1em;
+                    }
+                }
+                hr{
+                    //margin: 3px 0px 6px 0px;
+                    width: 80%;
+                }
+            }
+            .Cuadro2{
+                border-right:none;
+            }
+            
+
+            
+        }
+        /*.fila2{
+            display: flex;
+            width: 100%;
+            height: 50%;
+            .Cuadro3{
+                width: 50%;
+                height: 100%;
+                border-right: 1px solid #D7DDE5;
+            }
+            .Cuadro4{
+                width: 50%;
+                height: 100%;
+
+            }
+        }*/
+
+
+    }
 }
 
+/*                                  <span class="txt"><h3>Recorrido</h3></span>
+                                    <span class="number"><h2>LINEA A</h2></span>
+                                    Ida 
+                                    <hr style="border: 2px solid #64d637;opacity:0.8;" />
+                                    Vuelta 
+                                    <hr style="border: 2px dashed #4cb224;" />
 
 
 
-.info h4 {
-    margin: 0 0 5px;
-    color: #777;
-}
+                        <div id="bloqueInicio">
+                            <div class="fila1">
+                                <div class="Cuadro1">1</div>
+                                <div class="Cuadro2">2</div>
+                            </div>
+                            <div class="fila2">
+                                <div class="Cuadro3">3</div>
+                                <div class="Cuadro4">4</div>
+                            </div>
+                        </div>
+*/
+
+
+
 
 .dat_cole{
     
