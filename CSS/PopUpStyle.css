@@ -188,21 +188,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   border-radius: 5px 5px 0px 0px;
-  /*.fila2{
-            display: flex;
-            width: 100%;
-            height: 50%;
-            .Cuadro3{
-                width: 50%;
-                height: 100%;
-                border-right: 1px solid #D7DDE5;
-            }
-            .Cuadro4{
-                width: 50%;
-                height: 100%;
-
-            }
-        }*/
 }
 
 .info #bloqueInicio .fila1, .info #bloqueInicio .fila2 {
@@ -254,34 +239,4 @@
 .info #bloqueInicio .fila1 .Cuadro2, .info #bloqueInicio .fila2 .Cuadro2 {
   border-right: none;
 }
-
-/*                                  <span class="txt"><h3>Recorrido</h3></span>
-                                    <span class="number"><h2>LINEA A</h2></span>
-                                    Ida 
-                                    <hr style="border: 2px solid #64d637;opacity:0.8;" />
-                                    Vuelta 
-                                    <hr style="border: 2px dashed #4cb224;" />
-
-
-
-                        <div id="bloqueInicio">
-                            <div class="fila1">
-                                <div class="Cuadro1">1</div>
-                                <div class="Cuadro2">2</div>
-                            </div>
-                            <div class="fila2">
-                                <div class="Cuadro3">3</div>
-                                <div class="Cuadro4">4</div>
-                            </div>
-                        </div>
-*/
-/*<div class="bloque1">
-                            <div class="SupLeft"></div>
-                            <div class="SupRight"></div>
-                        </div>
-                        <div class="bloque2">
-                            <div class="filaInferior"></div>
-                            <div class="filaInferior"></div>
-                            <div class="filaInferior"></div>
-                        </div>*/
 /*# sourceMappingURL=PopUpStyle.css.map */

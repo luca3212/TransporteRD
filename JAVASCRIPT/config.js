@@ -132,49 +132,9 @@ info.update = function (obj) {
                         `;
     }
 };
-/*
-<div class="bloque1">
-                            <div class="SupLeft"><span class="txt"><h3>Recorrido</h3></span><span class="number"><h2>LINEA A</h2></span></div>
-                            <div class="SupRight">
-                            Ida 
-                            <hr style="border: 2px solid #64d637;opacity:0.8;" />
-                            Vuelta 
-                            <hr style="border: 2px dashed #4cb224;" />
-                            </div>
-                        </div>
-                        <div class="bloque1">
-                                <div class="SupLeft"><span class="txt"><h3>Recorrido</h3></span><span class="number"><h2>LINEA E</h2></span></div>
-                                <div class="SupRight">
-                                Ida 
-                                <hr style="border: 2px solid #37b3d6;opacity:0.8;" />
-                                Vuelta 
-                                <hr style="border: 2px dashed #2493b2;" />
-                                </div>
-                        </div>
-                        <div class="bloque1">
-                                <div class="SupLeft"><span class="txt"><h3>Recorrido</h3></span><span class="number EO"><h2>LINEA ZONA ESTE</h2></span></div>
-                                <div class="SupRight">
-                                Ida 
-                                <hr style="border: 2px solid #d65b37;opacity:0.8;" />
-                                Vuelta 
-                                <hr style="border: 2px dashed #b24424;" />
-                                </div>
-                        </div>
-                        <div class="bloque1">
-                                <div class="SupLeft"><span class="txt"><h3>Recorrido</h3></span><span class="number EO"><h2>LINEA ZONA OESTE</h2></span></div>
-                                <div class="SupRight">
-                                Ida 
-                                <hr style="border: 2px solid #aa37d6;opacity:0.8;" />
-                                Vuelta 
-                                <hr style="border: 2px dashed #8b24b2;" />
-                                </div>
-                        </div>
-*/
+
 
 info.addTo(map);
-
-
-
 
 //funcion select Recorrido a mostrar
 function recorridoSelect(){
