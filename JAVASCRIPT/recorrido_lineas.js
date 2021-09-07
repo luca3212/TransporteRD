@@ -631,7 +631,7 @@ var Linea_ZONAOESTE_VUELTA =
 
 
 // ----- Linea ZONA OESTE INICIO-FINAL-PARADAS -----------
-const Linea_ZONAOESTE_MARKER = {
+var Linea_ZONAOESTE_MARKER = {
   "type": "FeatureCollection",
   "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                   
@@ -689,7 +689,6 @@ var LineaZONAESTE_VUELTA = new L.geoJson(Linea_ZONAESTE_VUELTA, {onEachFeature: 
 //cargamos los marcadores(inicio-final-paradas)
 var LineaA_marca = new L.geoJson(Linea_A_MARKER, {pointToLayer: estiloCircleMarker});
 var LineaE_marca = new L.geoJson(Linea_E_MARKER, {pointToLayer: estiloCircleMarker});
-var LineaZONAESTE_marca = new L.geoJson(Linea_ZONAESTE_MARKER, {pointToLayer: estiloCircleMarker});
 var LineaZONAESTE_marca = new L.geoJson(Linea_ZONAESTE_MARKER, {pointToLayer: estiloCircleMarker});
 var LineaZONAOESTE_marca = new L.geoJson(Linea_ZONAOESTE_MARKER, {pointToLayer: estiloCircleMarker});
 

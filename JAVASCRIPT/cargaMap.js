@@ -31,3 +31,32 @@ L.control.layers(baseMaps,null,{
 
 //capa principal
 var capaPrincipal = L.layerGroup().addTo(map);
+
+const myIcon = L.divIcon({className: 'my-div-icon',iconSize:[15,15]});
+
+
+
+    
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition(
+                (location) => {
+                    var lat = location.coords.latitude;
+                    var lng = location.coords.longitude;
+
+                    var punto_ubi =L.marker([lat, lng], {icon: myIcon}).addTo(map);
+                    
+                    punto_ubi.bindPopup('Aca se encuentra usted!').openPopup();
+                },
+                (err) => {
+                    console.warn(err);
+                },
+                {
+                    enableHighAccuracy: false,
+                    timeout: 1500,
+                    maximumAge: 0
+                }
+                
+            );
+        }
+  
+       
