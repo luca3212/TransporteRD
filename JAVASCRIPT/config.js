@@ -10,7 +10,10 @@ return this._div;
 
 info.update = function (obj) {
     //alert("entro"+ obj.properties.name);
+    
     if(obj){
+        //this._div.style.display='block';
+        $(".info").fadeIn(1200);
             switch(obj.properties.id){
                     case("0"):{
                         //linea A
@@ -90,7 +93,10 @@ info.update = function (obj) {
                     }
             }
     }else{
-        this._div.innerHTML = `
+        //$(".info").fadeOut(3000);
+        this._div.style.display='none';
+        
+        /*this._div.innerHTML = `
                         <div id="bloqueInicio">
                             <div class="fila1">
                                 <div class="Cuadro1">
@@ -129,7 +135,7 @@ info.update = function (obj) {
                                 </div>
                             </div>
                         </div>
-                        `;
+                        `;*/
     }
 };
 
