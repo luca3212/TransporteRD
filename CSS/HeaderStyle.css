@@ -7,12 +7,13 @@
 }
 
 body {
-  background: #fbfbfb;
+  background: #f9f9f9;
 }
 
 header {
   margin-bottom: 30px;
   background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .container {
@@ -189,7 +190,7 @@ ul.tabs a:hover span {
     position: fixed;
     bottom: 0;
     z-index: 2000;
-    border-top: 1px solid #c7c7c7;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
   #barraMenu ul.tabs {
     background: #fff;
