@@ -6,9 +6,13 @@
   font-family: Helvetica,Arial, sans-serif;
 }
 
+body {
+  background: #fbfbfb;
+}
+
 header {
   margin-bottom: 30px;
-  background: #f7f7f7;
+  background: #fff;
 }
 
 .container {
@@ -37,9 +41,6 @@ header {
 
 #titulo h1 {
   font-size: 2em;
-  /*background-image: url(Tapiz/blue.gif);
-        background-size: 75px;
-        background-repeat: repeat;*/
   background: -webkit-gradient(linear, left top, right top, from(#c6426e), to(#642b73));
   background: linear-gradient(to right, #c6426e, #642b73);
   -webkit-text-fill-color: transparent;
@@ -122,9 +123,14 @@ ul.tabs a:hover span {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #titulo {
-    width: 100%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
     text-align: center;
   }
   #barraMenu {
@@ -167,7 +173,6 @@ ul.tabs a:hover span {
   }
   header {
     margin-bottom: 15px;
-    background: none;
   }
   #titulo {
     width: 100%;
@@ -176,7 +181,6 @@ ul.tabs a:hover span {
   }
   #titulo h1 {
     font-size: 1.5rem;
-    color: #fff;
     text-align: left;
   }
   #barraMenu {
@@ -188,11 +192,7 @@ ul.tabs a:hover span {
     border-top: 1px solid #c7c7c7;
   }
   #barraMenu ul.tabs {
-    /*background-image: url(Tapiz/back.gif);
-            background-size: 75px;
-            background-repeat: repeat;
-                */
-    background-color: #fff;
+    background: #fff;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
