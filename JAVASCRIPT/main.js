@@ -1,10 +1,12 @@
 $(document).ready(function(){ 
-    $('ul.tabs li a:first').addClass('active');
+    //$('ul.tabs li a:first').addClass('active'); 
+    $('#este').addClass('active');
     $('ul.tabs li a span#1').removeClass('mdi mdi-map-outline');
     $('ul.tabs li a span#1').addClass('mdi mdi-map');
     
     $('.secciones article').hide();
-    $('.secciones article:first').show();
+    //$('.secciones article:first').show();
+    $('#tab2').show();
     
 
     $('ul.tabs li a').click(function(){
