@@ -276,6 +276,11 @@
             box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.5);
     background: #fff;
   }
+  .title h2 {
+    padding: 15px;
+    font-size: 1.3em;
+    letter-spacing: 4px;
+  }
 }
 
 #tab2 {

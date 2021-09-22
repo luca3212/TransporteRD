@@ -72,7 +72,11 @@
         width: 90%;
         height: max-content;
         z-index: none;
-        
+        h2{
+            padding: 15px;
+            font-size: 1.3em;
+            letter-spacing: 4px;
+        }
         left: 0px;
         border-radius: 10px 10px 0px 0px;
         box-shadow: 0 0 12px 1px rgba(0,0,0, 0.5);
