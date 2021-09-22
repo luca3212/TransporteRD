@@ -7,11 +7,11 @@
 
 #conte-tab2{
     width: 100%;
-    height: 80%;
+    height: max-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    background-color: #fff;
     box-sizing: border-box;
     box-shadow: 0 0 12px 1px rgba(0,0,0, 0.3);
 }
@@ -19,13 +19,16 @@
 .titulo-tab2{
     width: 100%;
     padding: 20px;
-    border: 1px solid black;
+    //border: 1px solid black;
+    background: linear-gradient(270deg, #642b73, #c6426e);
+    color:#fff;
+    letter-spacing: 4px;
 }
 
 .contenido-tab2{
     width: 100%;
     height: 100%;
-   
+   margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -42,6 +45,8 @@
             h3{
                 text-align: center;
                 padding: 20px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
             }
         }
         .imageLinea{
@@ -55,4 +60,60 @@
             }
         }
     }
+}
+
+
+@media screen and (max-width:960px ) {
+    #conte-tab2{
+        width: 96%;
+        border-radius: 8px;
+        
+    }
+    .titulo-tab2{
+        border-radius: 8px 8px 0px 0px;
+    }
+    
+    .contenido-tab2{
+        
+        //flex-direction: column;
+        flex-wrap: wrap;
+        .imgHorario{
+            width: 50%;
+            
+        }
+        
+    }
+}
+
+@media screen and (max-width:530px ) {
+    
+    #conte-tab2{
+        width: 90%;
+        border-radius: 8px;
+        
+    }
+    .titulo-tab2{
+        border-radius: 8px 8px 0px 0px;
+        padding: 15px;
+        h2{
+            font-size: 1.3em;
+        }
+        
+    }
+    .contenido-tab2{
+        
+        flex-direction: column;
+        .imgHorario{
+            width: 100%;
+          
+            .lineaName{
+                h3{
+                    font-size: 1.2em;
+                }
+            }
+        }
+        
+    }
+
+    
 }
