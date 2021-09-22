@@ -4,9 +4,9 @@
 
 .secciones{
 	width: 100%;
-    min-height: 600px;
+    //min-height: 600px;
     height: max-content;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     article{
         position: relative;
         margin: 0px auto;
@@ -17,4 +17,10 @@
         align-items: center;
         justify-content: flex-end;
     }    
+}
+
+@media screen and (max-width:530px ) {
+    .secciones{
+        margin-bottom: 80px;
+    }
 }

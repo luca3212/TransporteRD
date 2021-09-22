@@ -26,7 +26,7 @@
 
 #conte-tab4 {
   width: 90%;
-  height: 80%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,7 +42,7 @@
 
 .contorno-tab4 {
   width: 90%;
-  height: 90%;
+  height: 100%;
 }
 
 .infoContact {
@@ -198,7 +198,7 @@
 
 #map {
   width: 100%;
-  min-height: 400px;
+  min-height: 500px;
   height: 100%;
 }
 
@@ -421,11 +421,10 @@
 
 .secciones {
   width: 100%;
-  min-height: 600px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .secciones article {
@@ -446,5 +445,11 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media screen and (max-width: 530px) {
+  .secciones {
+    margin-bottom: 80px;
+  }
 }
 /*# sourceMappingURL=stylesSecciones.css.map */
