@@ -5,7 +5,7 @@ Transporte Urbano VM <br>
 <a href="https://luca3212.github.io/TransporteRD">Demo</a>
 
 Tecnologias aplicadas:
-  - HTML, CSS
-  - JavaScript
-  - Leaflet (biblioteca JavaScript de código abierto para mapas interactivos) 
 
+- HTML, SASS
+- JavaScript
+- Leaflet (biblioteca JavaScript de código abierto para mapas interactivos)

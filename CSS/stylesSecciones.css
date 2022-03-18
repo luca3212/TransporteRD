@@ -209,7 +209,7 @@
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  z-index: 400;
+  z-index: 600;
   left: 5px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.5);
